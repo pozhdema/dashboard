@@ -1,0 +1,44 @@
+nav {
+    width: 100px;
+    height: 1080px;
+    background: #373B53;
+}
+
+.logo {
+    position: relative;
+    height: 100px;
+    background: #6F52ED;
+}
+
+.logo-img {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+
+.navigations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 880px;
+}
+
+.navigations li {
+    padding-bottom: 45px;
+    list-style: none;
+}
+
+.navigations li:nth-child(1){
+    padding: 50px 0 30px;
+}
+
+.settings {
+    height: 100px;
+    border: 1px solid #494E67;
+}
+
+.settings-font {
+    position: relative;
+    left: 38px;
+    top: 38px;
+}

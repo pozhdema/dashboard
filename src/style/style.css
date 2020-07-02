@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('../fonts/Gilroy.otf') format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1943px;
+    font-family: Gilroy;
+    background: #DFE1EB;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+}

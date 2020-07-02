@@ -1,0 +1,53 @@
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+.controls-block {
+    margin-left: 60px;
+}
+
+.controls-block h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.controls-block span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #A6ACBE;
+}
+
+.controls-btn{
+    margin-right: 60px;
+}
+
+.font-pencil, .font-plus {
+    position: relative;
+    left: 30px;
+    z-index: 1;
+}
+
+#btn-pencil {
+    border: 1px solid #DADCE5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: transparent;
+    color: #6F52ED;;
+}
+
+#btn-plus {
+    background: #6F52ED;
+    border: 1px solid #6F52ED;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
