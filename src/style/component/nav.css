@@ -21,14 +21,14 @@ nav {
     flex-direction: column;
     align-items: center;
     height: 880px;
-}
-
-.navigations li {
-    margin: 30px;
     list-style: none;
 }
 
-.navigations li:hover {
+.link {
+    margin: 30px;
+}
+
+.active {
     position: relative;
     display: flex;
     align-items: center;
