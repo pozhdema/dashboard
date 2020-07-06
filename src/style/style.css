@@ -12,6 +12,12 @@ body {
     width: 1943px;
     font-family: Gilroy;
     background: #DFE1EB;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #000000;
 }
 
 .App {

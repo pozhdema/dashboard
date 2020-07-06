@@ -10,21 +10,21 @@ export default class Nav extends Component{
                     <img src="/img/logo.png" alt="logo" className="logo-img"/>
                 </div>
                 <ul className="navigations">
-                    <Link to="/folder" className="link">
-                        <li><a className="navigations-font" href="someValidPath"><img src='/img/folders.png'/></a></li>
+                    <Link to="/folder">
+                        <li><img src='/img/folders.png'/></li>
                     </Link>
-                    <Link to="/dashboard" className="link">
-                        <li><a className="navigations-font" href="someValidPath"><img src='/img/chart.png'/></a></li>
+                    <Link to="/dashboard">
+                        <li><img src='/img/chart.png'/></li>
                     </Link>
-                    <Link to="/envelope" className="link">
-                        <li><a className="navigations-font" href="someValidPath"><img src= '/img/mail.png'/></a></li>
+                    <Link to="/envelope" >
+                        <li><img src= '/img/mail.png'/></li>
                     </Link>
-                    <Link to="/file" className="link">
-                        <li><a className="navigations-font" href="someValidPath"><img src='/img/files.png'/></a></li>
+                    <Link to="/file" >
+                        <li><img src='/img/files.png'/></li>
                     </Link>
                 </ul>
                 <div className="settings">
-                    <a className="settings-font" href="someValidPath"><img src='/img/settings.png'/></a>
+                    <a className="settings-font" href="#"><img src='/img/settings.png'/></a>
                 </div>
             </nav>
         )

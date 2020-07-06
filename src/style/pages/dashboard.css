@@ -3,3 +3,34 @@
     height: 1082px;
 }
 
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.section-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 620px;
+    width: 830px;
+}
+
+#root > div > div > div:nth-child(2) > div.section > div.section-chart > div:nth-child(1) {
+    width: 830px;
+    height: 378px;
+    border-radius: 10px;
+}
+
+.highcharts-title {
+    fill: #000000;
+    font-family: Gilroy;
+}
+
+.highcharts-credits {
+    display: none;
+}
+
+

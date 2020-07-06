@@ -1,0 +1,47 @@
+.mark {
+    width: 395px;
+    height: 572px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.mark-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    border-bottom: 1px solid #EEF0F7;;
+}
+
+.mark-content {
+    height: 522px;
+    overflow-y: scroll;
+}
+
+.mark-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.mark-content::-webkit-scrollbar-thumb {
+    background-color:  #DADCE4;
+    border-radius: 9em;
+}
+
+.mark-nav-caption {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.mark-nav-subtitle span {
+    padding-right: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #A6ACBE;
+}

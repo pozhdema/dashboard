@@ -34,17 +34,17 @@ export default class Filter extends Component {
                         </div>
                         <div className="lecturer-img"></div>
                     </div>
-                    <a className="lecturer-font" href="someValidPath">
+                    <a className="lecturer-font" href="#">
                         <img src='/img/down.png'/>
                     </a>
                 </div>
                 <div className="notifications">
                     <span className="notifications-line"></span>
                     <ul className="notifications-nav">
-                        <li><a className="notifications-font" href="someValidPath">
+                        <li><a className="notifications-font" href="#">
                             <img src='/img/notifications.png'/></a>
                         </li>
-                        <li><a className="notifications-font" href="someValidPath">
+                        <li><a className="notifications-font" href="#">
                             <img src='/img/logout.png'/></a>
                         </li>
                     </ul>

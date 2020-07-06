@@ -10,20 +10,12 @@
 }
 
 .controls-block h2 {
-    font-style: normal;
-    font-weight: 600;
     font-size: 30px;
     line-height: 36px;
-    letter-spacing: 0.01em;
-    color: #000000;
 }
 
 .controls-block span {
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
     color: #A6ACBE;
 }
 

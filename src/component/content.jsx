@@ -4,11 +4,11 @@ import '../style/component/content.css'
 const Content = props => {
     return (
         <div className="content">
-            <div className="ellipse">
+            <div className="ellipse" id={props.style}>
                 <img src={props.icon} className="font-ellipse"/>
             </div>
             <div className="content-title">
-                <h4>{props.title}</h4>
+                <h4>{props.title}<span>{props.subtitle}</span></h4>
                 <span>{props.content}</span>
             </div>
         </div>
