@@ -1,5 +1,28 @@
+.studying {
+    margin-top: 20px;
+}
+
 .studying-header {
     justify-content: flex-start;
     padding-left: 30px;
+}
+
+@media screen and (min-width: 576px) {
+    .studying {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .studying-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .studying-content {
+        display: block;
+    }
 }
 

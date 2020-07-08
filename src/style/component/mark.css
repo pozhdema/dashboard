@@ -1,5 +1,5 @@
 .mark {
-    width: 395px;
+    width: 230px;
     height: 572px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -8,7 +8,6 @@
 .mark-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     height: 50px;
     border-bottom: 1px solid #EEF0F7;;
 }
@@ -28,9 +27,10 @@
 }
 
 .mark-nav-caption {
+    margin-left: 10px;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.01em;
     color: #000000;
@@ -40,8 +40,33 @@
     padding-right: 10px;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.01em;
     color: #A6ACBE;
+}
+
+@media screen and (min-width: 768px) {
+    .mark {
+        width: 300px;
+    }
+
+    .mark-nav {
+        justify-content: space-around;
+    }
+
+    .mark-nav-caption {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .mark-nav-subtitle span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mark {
+        width: 395px;
+    }
 }

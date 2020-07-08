@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 1843px;
-    height: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130px;
     background: #FFFFFF;
 }
 
@@ -41,15 +42,16 @@
 }
 
 .search {
-    width: 1367px;
-    padding-left: 83px;
+    width: 256px;
+    padding: 10px 0 0 5px;
 }
 
 .lecturer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 300px;
+    flex-wrap: wrap;
+    width: 60%;
     font-weight: 500;
     text-align: right;
 }
@@ -65,7 +67,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 125px;
+    width: 100px;
 }
 
 .lecturer-block span{
@@ -87,12 +89,7 @@
     display: flex;
     align-items: center;
     height: 100px;
-}
-
-.notifications::before {
-    content: "";
-    height: 64px;
-    border: 1px solid #EFF4F7;
+    width: 40%;
 }
 
 .notifications-nav {
@@ -101,4 +98,59 @@
     width: 176px;
     list-style: none;
 }
+
+@media screen and (min-width: 576px) {
+    .filter {
+        height: 100px;
+    }
+
+    .search {
+        width: 150px;
+    }
+
+    .lecturer {
+        width: 250px;
+    }
+
+    .notifications {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+        width: 55%;
+    }
+
+    .lecturer{
+        width: 35%;
+    }
+
+    .notifications {
+        width: 10%;
+    }
+
+    .lecturer-block {
+        width: 125px;
+    }
+
+    .notifications::before {
+        content: "";
+        height: 64px;
+        border: 1px solid #EFF4F7;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .search {
+        width: 70%;
+        padding-left: 83px;
+    }
+
+    .lecturer {
+        width: 20%;
+    }
+}
+
+
 

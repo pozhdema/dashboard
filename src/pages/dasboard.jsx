@@ -106,6 +106,7 @@ export default class Dashboard extends Component {
                             />
                             <Content
                                 icon='/img/cup.png'
+                                style="ellipse-yellow"
                                 title="25"
                                 content="Lections left"
                             />

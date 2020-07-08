@@ -9,12 +9,12 @@
 }
 
 body {
-    width: 1943px;
+    width: 100%;
     font-family: Gilroy;
     background: #DFE1EB;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.01em;
     color: #000000;
@@ -23,4 +23,10 @@ body {
 .App {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 14px;
+    }
 }
