@@ -16,7 +16,7 @@ export default class App extends Component {
                     <Nav/>
                     <Switch>
                         <Route path="/folder" component={Folder}/>
-                        <Route path="/dashboard" component={Dashboard}/>
+                        <Route path="/" exact component={Dashboard}/>
                         <Route path="/envelope" component={Envelope}/>
                         <Route path="/file" component={File}/>
                     </Switch>

@@ -11,7 +11,7 @@ export default class Nav extends Component {
                 src: '/img/folders.png',
             },
             {
-                Link: '/dashboard',
+                Link: '/',
                 id: '1',
                 src: '/img/chart.png',
             },
@@ -39,8 +39,8 @@ export default class Nav extends Component {
         let nav =
             this.state.elem.map((e) => {
                 return (
-                    <Link to={e.Link}>
-                        <li onClick={() => this.find(e.id)} id={e.id}
+                    <Link to={e.Link} onClick={() => this.find(e.id)}>
+                        <li id={e.id}
                             className={e.id === this.state.clicked ? "link active" : "link"}><img src={e.src}/></li>
                     </Link>
                 )

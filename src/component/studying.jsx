@@ -4,20 +4,38 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 export default class Studying extends  Component{
+    mortarboard = (chart) => {
+        let textX = chart.plotLeft + (chart.series[0].center[0]);
+        let textY = chart.plotTop + (chart.series[0].center[1]);
+
+        chart.renderer.image(
+            '/img/mortarboard.png',
+            textX - 15,
+            textY - 15,
+            30,
+            30
+        ).add();
+    };
     render() {
         const options = {
             chart: {
                 plotBackgroundColor: null,
-                plotBorderWidth: 0,
+                plotBorderWidth: null,
                 plotShadow: false,
-                height: '400px',
+                marginTop: -200,
+                height: '500px',
             },
             title: {
-                text: '',
-                align: 'center',
+                text: ''
             },
             legend: {
                 layout: 'vertical',
+                width: 300,
+                symbolPadding: 30,
+                labelFormatter: function () {
+                    return this.name +' ('+ this.y+'%)';
+                },
+                itemMarginBottom: 30,
                 backgroundColor: '#FFFFFF',
                 floating: true,
                 itemStyle: {
@@ -26,7 +44,7 @@ export default class Studying extends  Component{
                     fontFamily: 'Gilroy',
                     fontStyle: 'normal',
                     fontSize: 14,
-                    lineHeight: 16
+                    lineHeight: 16,
                 }
             },
             plotOptions: {
@@ -38,8 +56,10 @@ export default class Studying extends  Component{
                     },
                     size: 200,
                     showInLegend: true,
-
                 }
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
             },
             series: [{
                 type: 'pie',
@@ -47,25 +67,26 @@ export default class Studying extends  Component{
                 innerSize: '80%',
                 colorByPoint: true,
                 data: [{
-                    name: 'Groups of 20 students',
-                    y: 20,
+                    name: 'Groups of 20 students '+'<b>20</b>',
+                    y: 32,
                     color: '#6F52ED'
                 }, {
-                    name: 'Groups of 10 students',
-                    y: 20,
+                    name: 'Groups of 10 students '+'<b>20</b>',
+                    y: 32,
                     color: '#FFB800'
                 }, {
-                    name: 'Groups of 5 students',
-                    y: 15,
+                    name: 'Groups of 5 students '+'<b>15</b>',
+                    y: 24,
                     color: '#FF4C61'
                 }, {
-                    name: 'Individual sessions',
-                    y: 7,
+                    name: 'Individual sessions '+'<b>7</b>',
+                    y: 12,
                     color: '#33D69F'
                 }]
             }]
-
         };
+
+
         return(
             <div className="mark studying">
                 <div className="mark-nav studying-header">
@@ -75,6 +96,7 @@ export default class Studying extends  Component{
                     <HighchartsReact
                         highcharts={Highcharts}
                         options={options}
+                        callback={this.mortarboard}
                     />
                 </div>
             </div>

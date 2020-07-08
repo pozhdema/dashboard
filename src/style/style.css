@@ -10,6 +10,7 @@
 
 body {
     width: 100%;
+    min-width: 320px;
     font-family: Gilroy;
     background: #DFE1EB;
     font-style: normal;
