@@ -4,7 +4,7 @@ import './block.css'
 const Block = ({style, icon, title, subtitle, content}) => (
     <div className="content">
         <div className="ellipse" id={style}>
-            <img src={icon} className="font-ellipse"/>
+            <img src={icon} className="font-ellipse" alt='icon'/>
         </div>
         <div className="content-title">
             <h4>{title}<span>{subtitle}</span></h4>

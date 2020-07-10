@@ -41,7 +41,7 @@ export default class Nav extends Component {
                 return (
                     <Link to={e.Link} onClick={() => this.find(e.id)}>
                         <li id={e.id}
-                            className={e.id === this.state.clicked ? "link active" : "link"}><img src={e.src}/></li>
+                            className={e.id === this.state.clicked ? "link active" : "link"}><img src={e.src} alt='navigation'/></li>
                     </Link>
                 )
             });
@@ -54,7 +54,7 @@ export default class Nav extends Component {
                     {nav}
                 </ul>
                 <div className="settings">
-                    <a className="settings-font" href="#"><img src='/img/settings.png'/></a>
+                    <a className="settings-font" href="someValidPath"><img src='/img/settings.png' alt='settings'/></a>
                 </div>
             </nav>
         )

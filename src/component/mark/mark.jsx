@@ -9,7 +9,7 @@ export default function Mark() {
                 <p className="mark-nav-caption">Students by average mark</p>
                 <div className="mark-nav-subtitle">
                     <span>Descending</span>
-                    <a href="#"><img src='/img/down.png' alt="down"/></a>
+                    <a href="someValidPath"><img src='/img/down.png' alt="down"/></a>
                 </div>
             </div>
             <div className="mark-content">

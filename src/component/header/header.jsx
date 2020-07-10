@@ -14,7 +14,7 @@ export default class Header extends Component {
         return (
             <div className="filter">
                 <div className="search">
-                    <i className="font-search"><img src='/img/search.png'/></i>
+                    <i className="font-search"><img src='/img/search.png' alt='search'/></i>
                     <input
                         type="text"
                         onChange={this.searchChange}
@@ -32,18 +32,18 @@ export default class Header extends Component {
                         </div>
                         <div className="lecturer-img"></div>
                     </div>
-                    <a className="lecturer-font" href="#">
-                        <img src='/img/down.png'/>
+                    <a className="lecturer-font" href="someValidPath">
+                        <img src='/img/down.png' alt='down'/>
                     </a>
                 </div>
                 <div className="notifications">
                     <span className="notifications-line"></span>
                     <ul className="notifications-nav">
-                        <li><a className="notifications-font" href="#">
-                            <img src='/img/notifications.png'/></a>
+                        <li><a className="notifications-font" href="someValidPath">
+                            <img src='/img/notifications.png' alt='notifications'/></a>
                         </li>
-                        <li><a className="notifications-font" href="#">
-                            <img src='/img/logout.png'/></a>
+                        <li><a className="notifications-font" href="someValidPath">
+                            <img src='/img/logout.png' alt='logout'/></a>
                         </li>
                     </ul>
                 </div>
