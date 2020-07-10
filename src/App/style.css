@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('../fonts/Gilroy.otf') format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    background: #DFE1EB;
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
