@@ -1,12 +1,16 @@
 @font-face {
     font-family: Gilroy;
-    src: url('../fonts/Gilroy.otf') format("truetype");
+    src: url('fonts/Gilroy.otf') format("opentype"),
+    url('fonts/Gilroy.ttf') format('truetype'),
+    url('fonts/Gilroy.woff2') format('woff2'),
+    url('fonts/Gilroy.woff') format('woff');
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Gilroy;
+    font-family: Gilroy, Arial, Calibri;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -21,7 +25,7 @@ body {
     background: #DFE1EB;
 }
 
-.App {
+#root {
     display: flex;
     flex-wrap: wrap;
 }

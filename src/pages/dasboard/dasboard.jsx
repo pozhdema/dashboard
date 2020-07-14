@@ -1,18 +1,18 @@
 import React from "react";
 import './dashboard.css'
-import '../../component/content/content.css'
-import Controls from "../../component/controls/controls";
-import Block from "../../component/block/block";
+import '../../modules/content/content.css'
+import Controls from "../../modules/controls/controls";
+import Block from "../../modules/block/block";
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
-import Mark from "../../component/mark/mark";
-import Studying from "../../component/studying/studying";
+import Mark from "../../modules/mark/mark";
+import Studying from "../../modules/studying/studying";
 import Constants from './constants'
 
 export default function Dashboard() {
     return (
         <div className="pages">
-            <div>
+            <>
                 <Controls/>
                 <div className="section">
                     <Block
@@ -27,7 +27,7 @@ export default function Dashboard() {
                     />
                     <Block
                         icon='/img/underperform.png'
-                        style="ellipse-rose"
+                        styles="ellipse-rose"
                         title="9"
                         subtitle="(14%)"
                         content="Underperforming students"
@@ -44,7 +44,7 @@ export default function Dashboard() {
                         />
                         <Block
                             icon='/img/cup.png'
-                            style="ellipse-yellow"
+                            styles="ellipse-yellow"
                             title="25"
                             content="Lections left"
                         />
@@ -57,7 +57,7 @@ export default function Dashboard() {
                     <Mark/>
                     <Studying/>
                 </div>
-            </div>
+            </>
         </div>
     )
 }

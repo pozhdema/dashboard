@@ -1,9 +1,9 @@
 import React from "react";
 import './block.css'
 
-const Block = ({style, icon, title, subtitle, content}) => (
+const Block = ({styles, icon, title, subtitle, content}) => (
     <div className="content">
-        <div className="ellipse" id={style}>
+        <div className="ellipse" id={styles}>
             <img src={icon} className="font-ellipse" alt='icon'/>
         </div>
         <div className="content-title">

@@ -26,22 +26,22 @@ export default class Nav extends Component {
                 src: '/img/files.png',
             },
         ],
-        clicked: "1"
+        activeLinkId: "1"
     };
 
-    find = (e) => {
+    select = (event) => {
         this.setState({
-            clicked: e
+            activeLinkId: event
         })
     };
 
     render() {
         let nav =
-            this.state.elem.map((e) => {
+            this.state.elem.map((event, index) => {
                 return (
-                    <Link to={e.Link} onClick={() => this.find(e.id)}>
-                        <li id={e.id}
-                            className={e.id === this.state.clicked ? "link active" : "link"}><img src={e.src} alt='navigation'/></li>
+                    <Link key={index} to={event.Link} onClick={() => this.select(event.id)}>
+                        <li id={event.id}
+                            className={event.id === this.state.activeLinkId ? "link active" : "link"}><img src={event.src} alt='navigation'/></li>
                     </Link>
                 )
             });

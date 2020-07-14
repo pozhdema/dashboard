@@ -1,9 +1,3 @@
-.layout {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .layout-content {
     width: 80%;
 }

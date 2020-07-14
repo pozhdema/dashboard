@@ -18,11 +18,9 @@ nav {
 }
 
 .navigations {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*height: 2370px;*/
     list-style: none;
 }
 
@@ -91,7 +89,6 @@ nav {
 @media screen and (min-width: 1200px) {
     nav {
         width: 5%;
-        height: 102%;
     }
 
     .logo-img {

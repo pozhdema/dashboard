@@ -1,5 +1,3 @@
-import React from "react";
-
 const Options = {
         chart: {
         plotBackgroundColor: null,
@@ -50,19 +48,19 @@ const Options = {
         innerSize: '80%',
         colorByPoint: true,
         data: [{
-            name: 'Groups of 20 students '+'<b>20</b>',
+            name: 'Groups of 20 students <b>20</b>',
             y: 32,
             color: '#6F52ED'
         }, {
-            name: 'Groups of 10 students '+'<b>20</b>',
+            name: 'Groups of 10 students <b>20</b>',
             y: 32,
             color: '#FFB800'
         }, {
-            name: 'Groups of 5 students '+'<b>15</b>',
+            name: 'Groups of 5 students <b>15</b>',
             y: 24,
             color: '#FF4C61'
         }, {
-            name: 'Individual sessions '+'<b>7</b>',
+            name: 'Individual sessions <b>7</b>',
             y: 12,
             color: '#33D69F'
         }]

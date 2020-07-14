@@ -6,12 +6,12 @@ import './layout.css'
 
 export default function Layout() {
     return (
-        <div className="layout">
+        <React.Fragment>
             <Nav/>
             <div className="layout-content">
                 <Header/>
                 <Content/>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
