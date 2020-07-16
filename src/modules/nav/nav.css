@@ -7,14 +7,11 @@ nav {
 
 .logo {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     background: #6F52ED;
-}
-
-.logo-img {
-    position: absolute;
-    left: 10px;
-    top: 20px;
 }
 
 .navigations {
@@ -54,7 +51,8 @@ nav {
 
 .settings-font {
     position: relative;
-    left: 20px;
+    display: flex;
+    justify-content: center;
     top: 38px;
 }
 
@@ -69,14 +67,6 @@ nav {
     nav {
         height: 1770px;
     }
-
-    .logo-img {
-        left: 15px;
-    }
-
-    .settings-font {
-        left: 25px;
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -90,27 +80,11 @@ nav {
     nav {
         width: 5%;
     }
-
-    .logo-img {
-        left: 12px;
-    }
-
-    .settings-font {
-        left: 25px;
-    }
 }
 
 
 @media screen and (min-width: 1706px) {
     nav {
         height: 1080px;
-    }
-
-    .logo-img {
-        left: 25px;
-    }
-
-    .settings-font {
-        left: 30px;
     }
 }

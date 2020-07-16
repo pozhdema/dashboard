@@ -9,6 +9,9 @@
 }
 
 .ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 50px;
     margin-left: 20px;
@@ -28,13 +31,6 @@
     padding-left: 30px;
     width: 120px;
 }
-
-.font-ellipse {
-    position: relative;
-    top: 13px;
-    left: 13px;
-}
-
 
 h4 {
     margin-bottom: 11px;
@@ -65,11 +61,6 @@ h4 span {
         margin-left: 40px;
     }
 
-    .font-ellipse {
-        top: 25px;
-        left: 25px;
-    }
-
     .content-title {
         padding-left: 30px;
     }
@@ -83,5 +74,9 @@ h4 span {
     .content {
         width: 395px;
         margin-bottom: 50px;
+    }
+
+    .content-title {
+        width: 205px;
     }
 }
