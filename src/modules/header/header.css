@@ -1,4 +1,4 @@
-.filter {
+.header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -8,15 +8,21 @@
     background: #FFFFFF;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    width: 256px;
+    padding-left: 20px;
+}
+
 .font-search {
-    position: relative;
     z-index: 1;
 }
 
 .input-search {
     width: 99px;
     height: 24px;
-    padding-left: 30px;
+    padding-left: 10px;
     border: 1px solid #FFFFFF;
     outline: none;
 }
@@ -33,11 +39,6 @@
     font-size: 16px;
     line-height: 22px;
     color: #A6ACBE;
-}
-
-.search {
-    width: 256px;
-    padding: 10px 0 0 5px;
 }
 
 .lecturer {
@@ -101,7 +102,7 @@
 }
 
 @media screen and (min-width: 576px) {
-    .filter {
+    .header {
         height: 100px;
     }
 

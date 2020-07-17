@@ -1,4 +1,4 @@
-.controls {
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,12 +6,12 @@
     height: 140px;
 }
 
-.controls-block h2 {
+.title h1 {
     font-size: 25px;
     line-height: 36px;
 }
 
-.controls-block span {
+.title span {
     font-weight: 500;
     color: #A6ACBE;
 }
@@ -40,29 +40,29 @@
 }
 
 @media screen and (min-width: 576px) {
-    .controls {
+    .row {
         justify-content: space-evenly;
     }
 
-    .controls-block span {
+    .title span {
         font-size: 14px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .controls {
+    .row {
         justify-content: space-between;
     }
 
-    .controls-block {
+    .title {
         margin-left: 60px;
     }
 
-    .controls-block h2 {
+    .title h1 {
         font-size: 30px;
     }
 
-    .controls-btn {
+    .controls {
         margin-right: 60px;
     }
 
@@ -73,6 +73,6 @@
 
 @media screen and (min-width: 992px) {
     .font-pencil, .font-plus {
-        top: 0;
+        top: 5px;
     }
 }

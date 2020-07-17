@@ -7,7 +7,6 @@
 
 .mark-nav {
     display: flex;
-    align-items: center;
     height: 50px;
     border-bottom: 1px solid #EEF0F7;;
 }
@@ -36,6 +35,10 @@
     color: #000000;
 }
 
+.mark-nav-subtitle {
+    text-align: center;
+}
+
 .mark-nav-subtitle span {
     padding-right: 10px;
     font-style: normal;
@@ -46,6 +49,10 @@
     color: #A6ACBE;
 }
 
+.font-down {
+    position: relative;
+}
+
 @media screen and (min-width: 768px) {
     .mark {
         width: 300px;
@@ -53,6 +60,7 @@
 
     .mark-nav {
         justify-content: space-around;
+        align-items: center;
     }
 
     .mark-nav-caption {
@@ -62,6 +70,10 @@
 
     .mark-nav-subtitle span {
         font-size: 14px;
+    }
+
+    .font-down {
+        top: 9px;
     }
 }
 

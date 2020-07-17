@@ -28,7 +28,7 @@
 }
 
 .content-title {
-    padding-left: 30px;
+    padding-left: 17px;
     width: 120px;
 }
 
@@ -42,7 +42,7 @@ h4 span {
 }
 
 .content-title span {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     color: #A6ACBE;
@@ -63,6 +63,10 @@ h4 span {
 
     .content-title {
         padding-left: 30px;
+    }
+
+    .content-title span {
+        font-size: 14px;
     }
 
     h4 {
