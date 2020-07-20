@@ -10,52 +10,73 @@ import Studying from "../../modules/studying/studying";
 import Constants from './constants'
 
 export default function Dashboard() {
+    const block = [
+        {
+            icon: '/img/person.png',
+            title: '62',
+            content: 'Students'
+        },
+        {
+            icon: '/img/mark.png',
+            title: '6.8',
+            content: 'Average mark'
+        },
+        {
+            icon: '/img/underperform.png',
+            styles: 'ellipse-rose',
+            title: '9',
+            subtitle: '(14%)',
+            content: 'Underperforming students'
+        },
+        {
+            icon: '/img/book.png',
+            styles: '',
+            title: '83%',
+            content: 'Finished homeworks'
+        }
+    ];
+    let blockSize = block.map((block, index) => {
+        return (
+            <Block
+                key={index}
+                icon={block.icon}
+                styles={block.styles}
+                title={block.title}
+                subtitle={block.subtitle}
+                content={block.content}
+            />
+        )
+    });
+
     return (
-        <div className="pages">
+        <div className="content">
             <>
                 <Controls/>
                 <div className="section">
-                    <Block
-                        icon='/img/person.png'
-                        title="62"
-                        content="Students"
-                    />
-                    <Block
-                        icon='/img/mark.png'
-                        title="6.8"
-                        content="Average mark"
-                    />
-                    <Block
-                        icon='/img/underperform.png'
-                        styles="ellipse-rose"
-                        title="9"
-                        subtitle="(14%)"
-                        content="Underperforming students"
-                    />
-                    <Block
-                        icon='/img/book.png'
-                        title="83%"
-                        content="Finished homeworks"
-                    />
-                    <div className="section-chart">
+                    <div className='section-row'>
+                        {blockSize}
+                    </div>
+                    <div className="section-row section-chart">
                         <HighchartsReact
                             highcharts={Highcharts}
                             options={Constants}
                         />
+                        <Mark/>
+                        <Studying/>
                         <Block
+                            blockLast='block-first'
                             icon='/img/cup.png'
                             styles="ellipse-yellow"
                             title="25"
                             content="Lections left"
                         />
                         <Block
+                            blockLast='block-last'
                             icon='/img/clock.png'
                             title="139"
                             content="Hours spent on lections"
                         />
                     </div>
-                    <Mark/>
-                    <Studying/>
                 </div>
             </>
         </div>

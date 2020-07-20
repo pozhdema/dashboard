@@ -1,5 +1,5 @@
 .mark {
-    width: 230px;
+    width: 100%;
     height: 572px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -7,6 +7,8 @@
 
 .mark-nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 50px;
     border-bottom: 1px solid #EEF0F7;;
 }
@@ -18,6 +20,10 @@
 
 .mark-content::-webkit-scrollbar {
     width: 5px;
+}
+
+.mark-content::-webkit-scrollbar-track-piece {
+    margin-top: 92px;
 }
 
 .mark-content::-webkit-scrollbar-thumb {
@@ -55,17 +61,13 @@
 
 @media screen and (min-width: 768px) {
     .mark {
-        width: 300px;
-    }
-
-    .mark-nav {
-        justify-content: space-around;
-        align-items: center;
+        width: 21.7%;
+        margin-right: 40px;
     }
 
     .mark-nav-caption {
-        font-size: 14px;
         margin-left: 0;
+        font-size: 14px;
     }
 
     .mark-nav-subtitle span {
@@ -78,7 +80,5 @@
 }
 
 @media screen and (min-width: 992px) {
-    .mark {
-        width: 395px;
-    }
+
 }

@@ -1,20 +1,19 @@
-.content {
+.block {
     display: flex;
     align-items: center;
-    width: 200px;
-    height: 100px;
-    margin-bottom: 20px;
+    width: 80%;
+    height: 154px;
     background: #FFFFFF;
     border-radius: 10px;
+    margin: 10px 0;
 }
 
-.ellipse {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
+.icon {
+    box-sizing: content-box;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    padding: 23px;
     border-radius: 50%;
     background: rgba(113, 59, 219, 0.05);
 }
@@ -28,8 +27,8 @@
 }
 
 .content-title {
-    padding-left: 17px;
-    width: 120px;
+    padding-left: 20px;
+    width: 205px;
 }
 
 h4 {
@@ -37,8 +36,11 @@ h4 {
     font-size: 20px;
 }
 
-h4 span {
+h4::after {
+    content: attr(data-sub);
     margin-left: 10px;
+    color: #A6ACBE;
+    font-size: 14px;
 }
 
 .content-title span {
@@ -49,15 +51,20 @@ h4 span {
 }
 
 @media screen and (min-width: 768px) {
-    .content {
-        width: 300px;
-        height: 154px;
-        margin-bottom: 25px;
+    .block {
+        width: 21.7%;
+        margin: 0 40px 30px 0;
     }
 
-    .ellipse {
-        width: 70px;
-        height: 70px;
+    .block:first-child {
+        margin-left: 60px;
+    }
+
+    .block:last-child {
+        margin-right: 60px;
+    }
+
+    .icon {
         margin-left: 40px;
     }
 
@@ -65,22 +72,15 @@ h4 span {
         padding-left: 30px;
     }
 
-    .content-title span {
-        font-size: 14px;
-    }
-
     h4 {
         font-size: 28px;
+    }
+
+    h4::after {
+        font-size: 12px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .content {
-        width: 395px;
-        margin-bottom: 50px;
-    }
 
-    .content-title {
-        width: 205px;
-    }
 }

@@ -1,7 +1,7 @@
 nav {
     position: relative;
     width: 20%;
-    height: 2570px;
+    height: 2890px;
     background: #373B53;
 }
 
@@ -37,6 +37,10 @@ nav {
     border-radius: 10px;
 }
 
+.active svg path{
+    stroke: #713BDB;
+}
+
 .navigations a:first-child {
     margin-top: 50px;
 }
@@ -54,6 +58,11 @@ nav {
     display: flex;
     justify-content: center;
     top: 38px;
+}
+
+.settings-font svg path:hover {
+    stroke: #713BDB;
+    fill: #713BDB;
 }
 
 @media screen and (min-width: 576px) {

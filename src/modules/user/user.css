@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    width: 175px;
-    margin: 30px 30px 30px 10px;
+    width: 83%;
+    margin: 30px 40px 25px 30px;
 }
 
 .user-content {
@@ -24,14 +24,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    .user {
-        width: 245px;
-        margin: 30px;
-    }
+
 }
 
 @media screen and (min-width: 992px) {
-    .user {
-        width: 325px;
-    }
+
 }
