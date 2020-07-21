@@ -20,7 +20,7 @@
     width: 100%;
     height: 378px;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 2% 0;
 }
 
 .highcharts-title {
@@ -45,16 +45,16 @@
 @media screen and (min-width: 576px) {
     .section-row {
         flex-direction: row;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     #root > div > div.content > div.section > div.section-chart > div:nth-child(1) {
-        width: 45.5%;
-        margin: 0 40px 40px 60px;
+        width: 90%;
     }
 
     #block-first, #block-last {
-        bottom: -27px;
+        bottom: -170px;
     }
 
     #block-first {
@@ -62,20 +62,60 @@
     }
 
     #block-last {
-        left: 26.3%;
+        left: 52.3%;
     }
 }
 
 @media screen and (min-width: 768px) {
+    #root > div > div.content > div.section > div.section-chart > div:nth-child(1) {
+        width: 92%;
+    }
 
+    #block-first {
+        left: 4.1%;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    .section-row {
+        justify-content: normal;
+    }
 
+    #root > div > div.content > div.section > div.section-chart > div:nth-child(1) {
+        width: 91%;
+        margin: 0 4% 2% 4%;
+    }
+
+    #block-first, #block-last {
+        bottom: -195px;
+    }
+
+    #block-last {
+        left: 27.1%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .section-row {
+        align-items: flex-start;
+    }
 
+    #root > div > div.content > div.section > div.section-chart > div:nth-child(1) {
+        width: 46%;
+        margin: 0 2% 2% 3%;
+    }
+
+    #block-first, #block-last {
+        bottom: -33px;
+    }
+
+    #block-last {
+        left: 27.3%;
+    }
+
+    #block-first {
+        left: 3.1%;
+    }
 }
 
 

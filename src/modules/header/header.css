@@ -101,6 +101,16 @@
     list-style: none;
 }
 
+.more {
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.more-active {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
 @media screen and (min-width: 576px) {
     .header {
         height: 100px;

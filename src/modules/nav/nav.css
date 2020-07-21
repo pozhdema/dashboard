@@ -10,7 +10,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 130px;
     background: #6F52ED;
 }
 
@@ -37,7 +37,7 @@ nav {
     border-radius: 10px;
 }
 
-.active svg path{
+.active svg path {
     stroke: #713BDB;
 }
 
@@ -68,32 +68,32 @@ nav {
 @media screen and (min-width: 576px) {
     nav {
         width: 10%;
-        height: 1570px;
+        height: 1775px;
+    }
+
+    .logo {
+        height: 100px;
     }
 }
 
 @media screen and (min-width: 768px) {
     nav {
-        height: 1770px;
+        height: 1815px;
     }
 }
 
 @media screen and (min-width: 992px) {
-   nav {
-       width: 7%;
-       height: 1870px;
-   }
+    nav {
+        width: 7%;
+        height: 1600px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     nav {
         width: 5%;
-    }
-}
-
-
-@media screen and (min-width: 1706px) {
-    nav {
         height: 1080px;
     }
 }
+
+

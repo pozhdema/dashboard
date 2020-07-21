@@ -5,7 +5,7 @@
     height: 154px;
     background: #FFFFFF;
     border-radius: 10px;
-    margin: 10px 0;
+    margin: 2% 0;
 }
 
 .icon {
@@ -50,18 +50,39 @@ h4::after {
     color: #A6ACBE;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
     .block {
-        width: 21.7%;
-        margin: 0 40px 30px 0;
+        width: 44%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .block {
+        width: 21%;
+        margin: 0 2.5% 2% 0;
     }
 
     .block:first-child {
-        margin-left: 60px;
+        margin-left: 4%;
     }
 
     .block:last-child {
-        margin-right: 60px;
+        margin-right: 4%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .block {
+        width: 21.7%;
+        margin: 0 2% 2% 0;
+    }
+
+    .block:first-child {
+        margin-left: 3.5%;
+    }
+
+    .block:last-child {
+        margin-right: 3.5%;
     }
 
     .icon {
@@ -79,8 +100,4 @@ h4::after {
     h4::after {
         font-size: 12px;
     }
-}
-
-@media screen and (min-width: 992px) {
-
 }

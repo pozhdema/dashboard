@@ -3,6 +3,7 @@ import './header.css'
 
 function Header() {
     const [search, setSearch] = useState('');
+    const [more, setMore] = useState(false);
 
     return (
         <div className="header">
@@ -27,20 +28,21 @@ function Header() {
                     </div>
                     <div className="lecturer-img"></div>
                 </div>
-                <a href="someValidPath">
+                <span  onClick={() => {setMore(!more)}}
+                   className={more===true ? "more-active" : "more"}>
                     <img src='/img/more.png' alt='more'/>
-                </a>
+                </span>
             </div>
             <div className="notifications">
                 <ul className="notifications-nav">
                     <li>
                         <a href="someValidPath">
-                            <img src='/img/notifications.png' alt='more'/>
+                            <img src='/img/notifications.png' alt='notifications'/>
                         </a>
                     </li>
                     <li>
                         <a href="someValidPath">
-                            <img src='/img/logout.png' alt='more'/>
+                            <img src='/img/logout.png' alt='logout'/>
                         </a>
                     </li>
                 </ul>

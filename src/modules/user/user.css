@@ -4,7 +4,7 @@
     align-items: center;
     height: 40px;
     width: 83%;
-    margin: 30px 40px 25px 30px;
+    margin: 9% 5% 9% 5%;
 }
 
 .user-content {
@@ -23,10 +23,5 @@
     line-height: 16px;
 }
 
-@media screen and (min-width: 768px) {
 
-}
 
-@media screen and (min-width: 992px) {
-
-}

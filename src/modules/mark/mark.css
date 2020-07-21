@@ -27,7 +27,7 @@
 }
 
 .mark-content::-webkit-scrollbar-thumb {
-    background-color:  #DADCE4;
+    background-color: #DADCE4;
     border-radius: 9em;
 }
 
@@ -59,10 +59,28 @@
     position: relative;
 }
 
+@media screen and (min-width: 576px) {
+    .mark {
+        width: 45%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .mark {
+        width: 44%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .mark {
+        margin: 0 3% 0 4%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .mark {
         width: 21.7%;
-        margin-right: 40px;
+        margin: 0 2% 0 0;
     }
 
     .mark-nav-caption {
@@ -77,8 +95,4 @@
     .font-down {
         top: 9px;
     }
-}
-
-@media screen and (min-width: 992px) {
-
 }

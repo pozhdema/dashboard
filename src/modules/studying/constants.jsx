@@ -11,7 +11,7 @@ const Options = {
     },
     legend: {
         layout: 'vertical',
-            width: 300,
+            width: 220,
             symbolPadding: 30,
             labelFormatter: function () {
             return this.name +' ('+ this.y+'%)';
