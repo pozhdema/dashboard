@@ -1,21 +1,5 @@
-.studying {
-    margin: 4% 0;
-}
-
 .studying-header {
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
-}
-
-@media screen and (min-width: 992px) {
-    .studying {
-        margin: 0;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .studying {
-        margin: 0 3% 0 0;
-    }
 }

@@ -58,31 +58,13 @@ h4::after {
 
 @media screen and (min-width: 992px) {
     .block {
-        width: 21%;
-        margin: 0 2.5% 2% 0;
-    }
-
-    .block:first-child {
-        margin-left: 4%;
-    }
-
-    .block:last-child {
-        margin-right: 4%;
+        width: 24%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .block {
-        width: 21.7%;
-        margin: 0 2% 2% 0;
-    }
-
-    .block:first-child {
-        margin-left: 3.5%;
-    }
-
-    .block:last-child {
-        margin-right: 3.5%;
+        width: 23%;
     }
 
     .icon {

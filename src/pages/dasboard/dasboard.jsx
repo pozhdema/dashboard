@@ -8,33 +8,10 @@ import HighchartsReact from 'highcharts-react-official'
 import Mark from "../../modules/mark/mark";
 import Studying from "../../modules/studying/studying";
 import Constants from './constants'
+import block from './const'
 
-export default function Dashboard() {
-    const block = [
-        {
-            icon: '/img/person.png',
-            title: '62',
-            content: 'Students'
-        },
-        {
-            icon: '/img/mark.png',
-            title: '6.8',
-            content: 'Average mark'
-        },
-        {
-            icon: '/img/underperform.png',
-            styles: 'ellipse-rose',
-            title: '9',
-            subtitle: '(14%)',
-            content: 'Underperforming students'
-        },
-        {
-            icon: '/img/book.png',
-            styles: '',
-            title: '83%',
-            content: 'Finished homeworks'
-        }
-    ];
+const Dashboard = () => {
+
     let blockSize = block.map((block, index) => {
         return (
             <Block
@@ -52,19 +29,17 @@ export default function Dashboard() {
         <div className="content">
             <>
                 <Controls/>
-                <div className="section">
-                    <div className='section-row'>
-                        {blockSize}
-                    </div>
-                    <div className="section-row section-chart">
+                <div className='section-row'>
+                    {blockSize}
+                </div>
+                <div className="section-row">
+                    <div className='section-block'>
                         <HighchartsReact
                             highcharts={Highcharts}
                             options={Constants}
                         />
-                        <Mark/>
-                        <Studying/>
                         <Block
-                            blockLast='block-first'
+                            blockLast='block-last'
                             icon='/img/cup.png'
                             styles="ellipse-yellow"
                             title="25"
@@ -77,8 +52,12 @@ export default function Dashboard() {
                             content="Hours spent on lections"
                         />
                     </div>
+                    <Mark/>
+                    <Studying/>
                 </div>
             </>
         </div>
     )
-}
+};
+
+export default Dashboard;

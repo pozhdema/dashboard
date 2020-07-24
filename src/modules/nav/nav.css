@@ -25,7 +25,7 @@ nav {
     margin: 30px;
 }
 
-.active {
+.link:hover, .active {
     position: relative;
     display: flex;
     align-items: center;
@@ -39,6 +39,7 @@ nav {
 
 .active svg path {
     stroke: #713BDB;
+    background: rgba(113, 59, 219, 0.2);
 }
 
 .navigations a:first-child {
@@ -58,11 +59,6 @@ nav {
     display: flex;
     justify-content: center;
     top: 38px;
-}
-
-.settings-font svg path:hover {
-    stroke: #713BDB;
-    fill: #713BDB;
 }
 
 @media screen and (min-width: 576px) {
@@ -91,7 +87,7 @@ nav {
 
 @media screen and (min-width: 1200px) {
     nav {
-        width: 5%;
+        width: 5.255%;
         height: 1080px;
     }
 }

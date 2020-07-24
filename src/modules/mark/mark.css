@@ -3,6 +3,7 @@
     height: 572px;
     background: #FFFFFF;
     border-radius: 10px;
+    margin: 2% 0;
 }
 
 .mark-nav {
@@ -73,14 +74,13 @@
 
 @media screen and (min-width: 992px) {
     .mark {
-        margin: 0 3% 0 4%;
+        margin: 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .mark {
-        width: 21.7%;
-        margin: 0 2% 0 0;
+        width: 23%;
     }
 
     .mark-nav-caption {

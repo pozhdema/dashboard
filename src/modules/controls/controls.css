@@ -16,6 +16,9 @@
     color: #A6ACBE;
 }
 
+.controls {
+    display: flex;
+}
 
 .font-pencil, .font-plus {
     position: relative;
@@ -54,16 +57,8 @@
         justify-content: space-between;
     }
 
-    .title {
-        margin-left: 60px;
-    }
-
     .title h1 {
         font-size: 30px;
-    }
-
-    .controls {
-        margin-right: 60px;
     }
 
     .font-pencil, .font-plus {
