@@ -22,7 +22,9 @@ nav {
 }
 
 .link {
-    margin: 30px;
+    display: flex;
+    padding: 15px;
+    margin: 14px;
 }
 
 .link:hover, .active {
@@ -30,8 +32,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 54px;
-    height: 54px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     border-radius: 10px;

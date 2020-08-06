@@ -1,21 +1,22 @@
 .mark {
+    flex-wrap: wrap;
     width: 100%;
     height: 572px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    margin: 2% 0;
 }
 
 .mark-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
+    width: 100%;
+    padding: 0 20px;
     border-bottom: 1px solid #EEF0F7;;
 }
 
 .mark-content {
     height: 522px;
+    width: 100%;
     overflow-y: scroll;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .mark-content::-webkit-scrollbar-track-piece {
-    margin-top: 92px;
+    margin-top: 34px;
 }
 
 .mark-content::-webkit-scrollbar-thumb {
@@ -32,8 +33,7 @@
     border-radius: 9em;
 }
 
-.mark-nav-caption {
-    margin-left: 10px;
+.mark-nav-caption, .mark-nav-subtitle {
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -43,16 +43,9 @@
 }
 
 .mark-nav-subtitle {
+    padding-top: 5px;
     text-align: center;
-}
-
-.mark-nav-subtitle span {
-    padding-right: 10px;
-    font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
     color: #A6ACBE;
 }
 
@@ -76,6 +69,14 @@
     .mark {
         margin: 0;
     }
+
+    .mark-nav-subtitle {
+        padding-top: 0;
+    }
+
+    .font-down {
+        top: 9px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -83,16 +84,7 @@
         width: 23%;
     }
 
-    .mark-nav-caption {
-        margin-left: 0;
+    .mark-nav-caption, .mark-nav-subtitle {
         font-size: 14px;
-    }
-
-    .mark-nav-subtitle span {
-        font-size: 14px;
-    }
-
-    .font-down {
-        top: 9px;
     }
 }

@@ -1,42 +1,42 @@
 const Options = {
-        chart: {
+    chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
         plotShadow: false,
         marginTop: -200,
         height: '500px',
     },
-        title: {
-        text: ''
+    title: {
+        text: '',
     },
     legend: {
         layout: 'vertical',
-            width: 220,
-            symbolPadding: 30,
-            labelFormatter: function () {
-            return this.name +' ('+ this.y+'%)';
+        width: 220,
+        symbolPadding: 30,
+        labelFormatter: function () {
+            return this.name + ' (' + this.y + '%)';
         },
         itemMarginBottom: 30,
-            backgroundColor: '#FFFFFF',
-            floating: true,
-            itemStyle: {
+        backgroundColor: '#FFFFFF',
+        floating: true,
+        itemStyle: {
             color: '#A6ACBE',
-                fontWeight: 500,
-                fontFamily: 'Gilroy',
-                fontStyle: 'normal',
-                fontSize: 14,
-                lineHeight: 16,
+            fontWeight: 500,
+            fontFamily: 'Gilroy',
+            fontStyle: 'normal',
+            fontSize: 14,
+            lineHeight: 16,
         }
     },
     plotOptions: {
         pie: {
             allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                enabled: false
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false,
             },
             size: 200,
-                showInLegend: true,
+            showInLegend: true,
         }
     },
     tooltip: {

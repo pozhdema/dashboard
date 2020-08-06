@@ -1,22 +1,11 @@
 import React from "react";
 import './mark.css'
 import User from "../user/user";
-import userList from "./constats";
+import userList from "./just";
 
-export default function Mark() {
-
-    let user = userList.map((userList, index) => {
-        return (
-            <User
-                key={index}
-                icon={userList.icon}
-                name={userList.name}
-                percent={userList.percent}
-            />
-        )
-    });
+const Mark = () => {
     return (
-        <div className="mark">
+        <div className="block mark">
             <div className="mark-nav">
                 <p className="mark-nav-caption">Students by average mark</p>
                 <div className="mark-nav-subtitle">
@@ -27,8 +16,19 @@ export default function Mark() {
                 </div>
             </div>
             <div className="mark-content">
-                {user}
+                {userList.map((userList, index) => {
+                    return (
+                        <User
+                            key={index}
+                            icon={userList.icon}
+                            name={userList.name}
+                            percent={userList.percent}
+                        />
+                    )
+                })}
             </div>
         </div>
     )
-}
+};
+
+export default Mark;

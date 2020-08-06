@@ -4,7 +4,18 @@ const Constants = {
     },
     title: {
         text: 'Students number change per month',
-        align: 'left'
+        align: 'left',
+        style: {
+            color: '#000',
+            fontWeight: '600',
+            fontFamily: 'Gilroy',
+            fontStyle: 'normal',
+            fontSize: 14,
+            lineHeight: 16,
+            marginLeft: 20
+        },
+        x: 20,
+        y:20,
     },
     yAxis: [{
         title: {

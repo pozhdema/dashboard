@@ -11,17 +11,17 @@ export default class Studying extends Component {
         let textY = chart.plotTop + (chart.series[0].center[1]);
 
         chart.renderer.image(
-            '/img/mortarboard.png',
-            textX - 15,
-            textY - 15,
-            30,
-            30
+            '/img/comp.png',
+            textX - 50,
+            textY - 50,
+            103,
+            103
         ).add();
     };
 
     render() {
         return (
-            <div className="mark studying">
+            <div className="block mark">
                 <div className="mark-nav studying-header">
                     <p className="mark-nav-caption">Students by type of studying</p>
                 </div>

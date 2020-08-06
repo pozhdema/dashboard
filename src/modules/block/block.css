@@ -1,7 +1,6 @@
 .block {
     display: flex;
     align-items: center;
-    width: 80%;
     height: 154px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -27,8 +26,8 @@
 }
 
 .content-title {
-    padding-left: 20px;
-    width: 205px;
+    padding: 0 20px;
+    width: 160px;
 }
 
 h4 {
@@ -53,6 +52,10 @@ h4::after {
 @media screen and (min-width: 576px) {
     .block {
         width: 44%;
+    }
+
+    .content-title {
+        width: 205px;
     }
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import Btn from "../btn/btn";
 import './controls.css'
 
-export default function Controls() {
+const Controls = () => {
     return (
         <div className="row">
             <div className="title">
@@ -27,4 +27,6 @@ export default function Controls() {
             </div>
         </div>
     )
-}
+};
+
+export default Controls
