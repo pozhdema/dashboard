@@ -40,30 +40,30 @@ export default class Nav extends Component {
                 hrefD: 'M13 2V9H20'
             },
         ];
-        let nav = elem.map((event, index) => {
-            return (
-                <Link key={index} to={event.Link} onClick={() => this.select(event.id)} id={event.id}
-                      className={event.id === this.state.activeLinkId ? "link active" : "link"}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d={event.href}
-                            fill="#969CBA" fillOpacity="0.2" stroke="#969CBA" strokeWidth="2"
-                            strokeLinecap="round" strokeLinejoin="round"/>
-                        <path d={event.hrefD} stroke="#969CBA" strokeWidth="2" strokeLinecap="round"
-                              strokeLinejoin="round"/>
-                        <path d={event.hrefDThree} fill="#969CBA" fillOpacity="0.2" stroke="#969CBA"
-                              strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                </Link>
-            )
-        });
+
         return (
             <nav>
                 <div className="logo">
                    <img src='/img/logo.png' alt='logo'/>
                 </div>
                 <ul className="navigations">
-                    {nav}
+                    {elem.map((event, index) => {
+                    return (
+                    <Link key={index} to={event.Link} onClick={() => this.select(event.id)} id={event.id}
+                    className={event.id === this.state.activeLinkId ? "link active" : "link"}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d={event.href}
+                    fill="#969CBA" fillOpacity="0.2" stroke="#969CBA" strokeWidth="2"
+                    strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d={event.hrefD} stroke="#969CBA" strokeWidth="2" strokeLinecap="round"
+                    strokeLinejoin="round"/>
+                    <path d={event.hrefDThree} fill="#969CBA" fillOpacity="0.2" stroke="#969CBA"
+                    strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    </Link>
+                    )
+                })}
                 </ul>
                 <div className="settings">
                     <a className="settings-font" href="someValidPath">
